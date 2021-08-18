@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" >
+    <title>Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 44em;
+            margin: auto;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .card{
+            margin: 1em;
+            border-radius: 0.5em;
+            background: gray;
+            height: 10em;
+        }
+        .small{
+            width: 10em;
+        }
+        .big{
+
+            width: 22em;
+        }
+        .row{
+            display: flex;
+        }
+        @media only screen and (max-width: 710px) {
+            body{
+                background-color: red;
+            }
+        }
+        .card{
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row"></div>
+            <div class="card small"></div>
+            <div class="card small"></div>
+            <div class="card small"></div>
+            <div class="card small"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
